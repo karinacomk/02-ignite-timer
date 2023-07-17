@@ -12,3 +12,21 @@ import App from "./App.tsx"
 ```
 
 # Styled Components
+
+css in js
+css na sintaxe do js
+no site do npm se tiver "TS" (declaração de tipagem) significa que a tipagem vem em um pacote separado: https://www.npmjs.com/package/styled-components
+npm i styled-components
+npm i @types/styled-components -D (a tipagem não precisa em prod porque em prod tudo é convertido para js, não relevância ter código TS lá dentro)
+muito útil quando se usa estilização a partir de propriedades
+
+template literals (crase):
+
+```css
+styled.button``
+```
+
+instalar extensão do styled components: vscode-styled-components
+"${}" isso é interpolação, é visto como uma função js
+
+# Configurando temas
