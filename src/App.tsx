@@ -1,12 +1,20 @@
+import { ThemeProvider } from "styled-components";
 import { Button } from "./components/Button";
+
+import { defaultTheme } from "./styles/themes/default";
 
 export function App() {
   return (
     <>
-      <Button variant="primary" />
-      <Button variant="secondary" />
-      <Button variant="success" />
-      <Button variant="danger" />
+      <ThemeProvider theme={defaultTheme}>
+        <Button variant="primary" />
+        <Button variant="secondary" />
+        <Button variant="success" />
+        <Button variant="danger" />
+        <Button />
+      </ThemeProvider>
+
+      {/* se está fora do tema, não é aplicada a cor, pois não entende o conteúdo da variável theme.primary */}
       <Button />
     </>
   );
