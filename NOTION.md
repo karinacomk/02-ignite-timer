@@ -30,3 +30,15 @@ instalar extensão do styled components: vscode-styled-components
 "${}" isso é interpolação, é visto como uma função js
 
 # Configurando temas
+
+<ThemeProvider>
+
+# Tipagem de temas
+
+folder @types
+somente interfaces d.ts (definicao de tipos)
+nao precisa decorar
+agora vai autocompletar as propriedades do tema
+sobrescrever tipagem de um biblioteca existente
+
+# Estilos globais
