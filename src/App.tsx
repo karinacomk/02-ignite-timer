@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import { Button } from "./components/Button";
-
+import { GlobalStyle } from "./styles/global";
 import { defaultTheme } from "./styles/themes/default";
 
 export function App() {
@@ -12,6 +12,8 @@ export function App() {
         <Button variant="success" />
         <Button variant="danger" />
         <Button />
+
+        <GlobalStyle />
       </ThemeProvider>
 
       {/* se está fora do tema, não é aplicada a cor, pois não entende o conteúdo da variável theme.primary */}
