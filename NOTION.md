@@ -1,3 +1,5 @@
+https://github.com/rocketseat-education/02-ignite-timer
+
 # Criação do projeto
 
 npm create vite@latest
@@ -42,3 +44,7 @@ agora vai autocompletar as propriedades do tema
 sobrescrever tipagem de um biblioteca existente
 
 # Estilos globais
+
+createGlobalStyle
+
+# Cores & fonte
