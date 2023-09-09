@@ -48,3 +48,27 @@ sobrescrever tipagem de um biblioteca existente
 createGlobalStyle
 
 # Cores & fonte
+
+Fonte Roboto 400 regular e bold 700 e mono (pra não modificar o container quando a fonte é monoespaçada, ou seja, mesma largura)
+
+preconnect vir antes é melhor no index.html
+
+# Configurando ESLint
+
+ecma script lint => validar se segue padrões
+npm i eslint -D
+npm i @rocketseat/eslint-config -D (traz padroes de escrita de código)
+npx eslint --init (para criar a propria config)
+criar arquivo .eslintrc.json
+executa no terminal: npx eslint src --ext .ts,.tsx 
+se adicionar --fix corrige de tudo de uma só vez
+
+## Páginas e rotas
+
+# React Router DOM
+
+# Layout de rotas
+
+# Header & Layout
+
+
