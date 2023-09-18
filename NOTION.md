@@ -66,7 +66,8 @@ se adicionar --fix corrige de tudo de uma só vez
 ## Páginas e rotas
 # React Router DOM
 npm i react-router-dom
-<BrowserRouter>
+<BrowserRouter />
+
 # Layout de rotas
 
 # Header & Layout
