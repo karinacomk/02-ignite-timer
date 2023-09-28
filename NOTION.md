@@ -69,7 +69,11 @@ npm i react-router-dom
 <BrowserRouter />
 
 # Layout de rotas
-
+"O" logo
+criar algo que pode ser reaproveitado: usamos o outlet (espaço pra ser inserido um conteúdo)
+adiciona o <Route> pegando as outras rotas
+dá pra aplicar vários layouts, por ex, pra parte de admin se o layout precisa ser diferente
+os paths serão somados
 # Header & Layout
 
 
