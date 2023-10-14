@@ -74,7 +74,7 @@ criar algo que pode ser reaproveitado: usamos o outlet (espaço pra ser inserido
 adiciona o <Route> pegando as outras rotas
 dá pra aplicar vários layouts, por ex, pra parte de admin se o layout precisa ser diferente
 os paths serão somados
-# Header & Layout
+1# Header & Layout
 diretório header, arquivo index com arquivo styles
 alt= "Logo do Ignite" não explica nada.
 padrão do flex é row, um do lado do outro
@@ -82,3 +82,5 @@ gap dá um espaço, melhor que margin-left/right
 <NavLink> em vez do <a href>
 <NavLink> dá pra colocar o title q é bom pra acessibilidade e tem a propriedade active do link
 
+# Página Home
+flex-wrap: wrap => é para quebrar a linha quando diminuir a tela.
