@@ -90,3 +90,5 @@ cascata de css é bom evitar cascatear muito
 BaseInput estilo base pra customizar
 input não herda tamanho da fonte do container, pode usar inherit pra herdar
 flex = 1 é tipo um atalho e outras 3 propriedades css (o input vai caber no espaço que tiver, pode aumentar, pode diminuir, pode se ajustar)
+
+# Aprimorando os inputs
