@@ -96,3 +96,31 @@ step, min, max
 datalist
 
 # Página: History
+pasta History com:
+
+- arquivo index.tsx:
+```javascript
+import { HistoryContainer } from './styles'
+
+export function History() {
+  return (
+    <HistoryContainer>
+      <h1>Meu histórico</h1>
+
+      <HistoryList>
+      </HistoryList>
+    </HistoryContainer>
+  )
+}
+```
+- arquivo styles.ts
+```css
+import styled from 'styled-components'
+
+export const HistoryContainer = styled.main``
+```
+
+Faz um mock
+Estilização
+
+# Componente: Status
