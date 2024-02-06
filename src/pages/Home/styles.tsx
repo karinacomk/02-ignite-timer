@@ -89,6 +89,7 @@ const BaseInput = styled.input`
 `
 
 export const TaskInput = styled(BaseInput)`
+  // para utilizar outro componente, no caso BaseInput, como base para o novo componente.
   flex: 1;
 
   &::-webkit-calendar-picker-indicator {

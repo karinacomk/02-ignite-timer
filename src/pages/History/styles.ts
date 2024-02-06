@@ -57,3 +57,30 @@ export const HistoryList = styled.div`
     }
   }
 `
+
+// mapear para em vez do hexadecimal usar cor do tema
+const STATUS_COLORS = {
+  yellow: 'yellow-500',
+  green: 'green-500',
+  red: 'red-500',
+} as const // pra dizer que não pode mudar, só pode essas 3 strings
+
+interface StatusProps {
+  statusColor: keyof typeof STATUS_COLORS // são as keys do tipo STATUS_COLORS
+  // statusColor: 'yellow' | 'red' | 'green'
+}
+
+export const Status = styled.span<StatusProps>`
+  // para receber uma propriedade usa generics do typescript
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  &::before {
+    // before é a bolinha
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background: ${(props) => props.theme[STATUS_COLORS[props.statusColor]]};
+  }
+`
