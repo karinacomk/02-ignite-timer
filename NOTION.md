@@ -126,5 +126,14 @@ Estilização
 # Componente: Status
 
 ## Formulários
-
 # Controlled vs Uncontrolled
+tradicional
+:: Controlled = mantém a informação guardada em tempo real no estado e monitora a cada digitação.
+useState() não deixar vazio
+formulário simples
+
+:: Uncontrolled
+busca a info só quando precisa dela
+onSubmit dentro do <form>
+perde a fluidez :(, mas ganha em performance :)
+formulário mais complexo, dashboard, tipo 200 inputs
