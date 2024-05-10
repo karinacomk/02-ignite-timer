@@ -137,3 +137,19 @@ busca a info só quando precisa dela
 onSubmit dentro do <form>
 perde a fluidez :(, mas ganha em performance :)
 formulário mais complexo, dashboard, tipo 200 inputs
+
+# React Hook Form
+https://react-hook-form.com/
+trabalha com Controlled e Uncontrolled
+
+hook = são funções que acoplam uma funcionalidade em um componente existente
+
+método register() add input ao formulário
+sintaxe um pouco complexa
+register() retorna métodos para trabalharmos com input, ex: onChange, onBlur, etc
+
+criar variável auxiliar
+
+# Validando forms
+
+
