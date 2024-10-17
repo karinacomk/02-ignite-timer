@@ -60,15 +60,18 @@ npm i eslint -D
 npm i @rocketseat/eslint-config -D (traz padroes de escrita de código)
 npx eslint --init (para criar a propria config)
 criar arquivo .eslintrc.json
-executa no terminal: npx eslint src --ext .ts,.tsx 
+executa no terminal: npx eslint src --ext .ts,.tsx
 se adicionar --fix corrige de tudo de uma só vez
 
 ## Páginas e rotas
+
 # React Router DOM
+
 npm i react-router-dom
 <BrowserRouter />
 
 # Layout de rotas
+
 "O" logo
 criar algo que pode ser reaproveitado: usamos o outlet (espaço pra ser inserido um conteúdo)
 adiciona o <Route> pegando as outras rotas
@@ -83,22 +86,27 @@ gap dá um espaço, melhor que margin-left/right
 <NavLink> dá pra colocar o title q é bom pra acessibilidade e tem a propriedade active do link
 
 # Página Home
+
 flex-wrap: wrap => é para quebrar a linha quando diminuir a tela.
 
 # Finalização de Home
+
 cascata de css é bom evitar cascatear muito
 BaseInput estilo base pra customizar
 input não herda tamanho da fonte do container, pode usar inherit pra herdar
 flex = 1 é tipo um atalho e outras 3 propriedades css (o input vai caber no espaço que tiver, pode aumentar, pode diminuir, pode se ajustar)
 
 # Aprimorando os inputs
+
 step, min, max
 datalist
 
 # Página: History
+
 pasta History com:
 
 - arquivo index.tsx:
+
 ```javascript
 import { HistoryContainer } from './styles'
 
@@ -107,13 +115,14 @@ export function History() {
     <HistoryContainer>
       <h1>Meu histórico</h1>
 
-      <HistoryList>
-      </HistoryList>
+      <HistoryList></HistoryList>
     </HistoryContainer>
   )
 }
 ```
+
 - arquivo styles.ts
+
 ```css
 import styled from 'styled-components'
 
@@ -126,7 +135,9 @@ Estilização
 # Componente: Status
 
 ## Formulários
+
 # Controlled vs Uncontrolled
+
 tradicional
 :: Controlled = mantém a informação guardada em tempo real no estado e monitora a cada digitação.
 useState() não deixar vazio
@@ -139,6 +150,7 @@ perde a fluidez :(, mas ganha em performance :)
 formulário mais complexo, dashboard, tipo 200 inputs
 
 # React Hook Form
+
 https://react-hook-form.com/
 trabalha com Controlled e Uncontrolled
 
@@ -152,6 +164,33 @@ criar variável auxiliar
 
 # Validando forms
 
+libs:
+https://github.com/jquense/yup
+https://github.com/hapijs/joi
+https://zod.dev/
+
+Zod tem mais integração com TS, mas as 3 são boas
+@hookform/resolvers permite integra o react-hook-form com as libs de validação
+
+quando não tem o `export default`, importamos assim:
+`import { zord } from 'zod'` OU
+`import * as zord from 'zod'`
+
+Schema é escolher um formato e validar com base neste formato.
+
+```javascript
+const newCycleFormValidationSchema = zod.object({
+  task: zod.string().min(1, 'Informe a tarefa'),
+  minutesAmount: zod
+    .number()
+    .min(5, 'O ciclo precisa ser de no mínimo 5 minutos.')
+    .max(60, 'O ciclo precisa ser de no máximo 60 minutos.'),
+})
+const { register, handleSubmit, watch } = useForm({
+  resolver: zodResolver(newCycleFormValidationSchema),
+})
+```
+
+# TypeScript no formulário
+
 # Teste commit
-
-
