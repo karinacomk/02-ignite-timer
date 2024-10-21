@@ -193,4 +193,9 @@ const { register, handleSubmit, watch } = useForm({
 
 # TypeScript no formulário
 
+https://github.com/colinhacks/zod
+npm install react-hook-form zod @hookform/resolvers
+
+# Resetando formulário
+
 # Teste commit
