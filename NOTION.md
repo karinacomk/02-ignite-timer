@@ -198,4 +198,8 @@ npm install react-hook-form zod @hookform/resolvers
 
 # Resetando formulário
 
+## FUNCIONALIDADES DA APLICAÇÃO
+
+# Iniciando novo ciclo
+
 # Teste commit
