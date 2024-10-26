@@ -202,4 +202,10 @@ npm install react-hook-form zod @hookform/resolvers
 
 # Iniciando novo ciclo
 
+aparece 2 console.log por causa do <React.StrictMode>
+
+# Criando countdown
+
+# O hook useEffect
+
 # Teste commit
