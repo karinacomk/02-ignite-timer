@@ -208,4 +208,11 @@ aparece 2 console.log por causa do <React.StrictMode>
 
 # O hook useEffect
 
+hooks add comportamento a algum componente da app, sempre começa com use.
+
+useEffect() -> side-effect -> efeito colateral -> ficar monitorando alterações em uma variável
+qual função vai ser executada e quando
+executa no início e toda vez que a dependência entre [] é alterada, caso contrário aí tem que colocar um if dentro do
+useEffect()
+
 # Teste commit
