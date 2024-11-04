@@ -215,4 +215,14 @@ qual função vai ser executada e quando
 executa no início e toda vez que a dependência entre [] é alterada, caso contrário aí tem que colocar um if dentro do
 useEffect()
 
+se quiser que o determinado código seja executado somente na primeira renderização, basta usar o useEffect() com
+array de deps vazio [], é bom quando quer fazer um chamada para uma API.
+
+Importante: se estamos usando o useEffect() para atualizar algum estado, provavelmente, podemos estar cometendo algum
+erro. Ex da lista filtrada, filteredList não precisava ser um estado, quando temos algo que depende da atualização de
+estado, esse segundo muito provavelmente não precisa ser um estado e sim uma variável normal para não fazer o useEffect
+ser executado 2x.
+
+# Reduzindo countdown
+
 # Teste commit
