@@ -227,4 +227,6 @@ ser executado 2x.
 
 # Mudando o title da página
 
-# Teste commit
+useEffect pode ter um return
+
+# Interromper ciclo
