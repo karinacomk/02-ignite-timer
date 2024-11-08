@@ -230,3 +230,7 @@ ser executado 2x.
 useEffect pode ter um return
 
 # Interromper ciclo
+
+no setCycles() usou o princípio da imutabilidade.
+
+# Ciclo completo
