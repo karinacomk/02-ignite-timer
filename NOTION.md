@@ -234,3 +234,45 @@ useEffect pode ter um return
 no setCycles() usou o princípio da imutabilidade.
 
 # Ciclo completo
+
+melhor assim:
+
+O primeiro código é geralmente preferível, especialmente em React, porque usa o valor mais atualizado do estado
+anterior, evitando problemas que possam surgir de renderizações assíncronas.
+
+```javascript
+setCycles((state) =>
+  state.map((cycle) => {
+    if (cycle.id === activeCycleId) {
+      return { ...cycle, interruptedDate: new Date() }
+    } else {
+      return cycle
+    }
+  }),
+)
+```
+
+do que assim:
+
+```javascript
+setCycles(
+  cycles.map((cycle) => {
+    if (cycle.id === activeCycleId) {
+      return { ...cycle, interruptedDate: new Date() }
+    } else {
+      return cycle
+    }
+  }),
+)
+```
+
+# Separando componentes
+
+pasta components dentro de Home para os novos componentes usados em Home
+
+# Prop Drilling no React
+
+O Prop Drilling é um termo utilizado para quando temos muuuitas propriedades que estão se repassando em diversas camadas
+da nossa árvore de componentes. Outra solução é o Context API.
+
+## CONTEXTO NO REACT
