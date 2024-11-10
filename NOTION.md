@@ -276,3 +276,11 @@ O Prop Drilling é um termo utilizado para quando temos muuuitas propriedades qu
 da nossa árvore de componentes. Outra solução é o Context API.
 
 ## CONTEXTO NO REACT
+
+# Entendendo contextos
+
+o setActiveCycle() que vai alterar o estado da variável de contexto deve obrigatoriamente ficar dentro do componente
+PAI, ou seja, aquele que fica em volta de <NewCycleForm> e <Countdown>, o componente <Home> no caso.
+add PROVIDER por volta dos componentes que precisam ter acesso ao contexto. No value do provider envia os valores que
+serão compartilhados entre todos.
+o valor add no provider prevalece, ou seja, tem mais prioridade.
