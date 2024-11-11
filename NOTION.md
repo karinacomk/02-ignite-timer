@@ -284,3 +284,10 @@ PAI, ou seja, aquele que fica em volta de <NewCycleForm> e <Countdown>, o compon
 add PROVIDER por volta dos componentes que precisam ter acesso ao contexto. No value do provider envia os valores que
 serão compartilhados entre todos.
 o valor add no provider prevalece, ou seja, tem mais prioridade.
+
+# Convertendo para contexto
+
+contexto {} vazio é um problema
+{} as nomeDaInterface para dar a instrução do que colocar no value do provider
+Diego não gosta de enviar a função inteira setCycles para dentro do contexto por conta da tipagem dela. O ideal é criar
+uma nova função que use o setCycles e assim colocar no contexto a nova função em vez do setCycles.
