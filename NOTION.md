@@ -291,3 +291,17 @@ contexto {} vazio é um problema
 {} as nomeDaInterface para dar a instrução do que colocar no value do provider
 Diego não gosta de enviar a função inteira setCycles para dentro do contexto por conta da tipagem dela. O ideal é criar
 uma nova função que use o setCycles e assim colocar no contexto a nova função em vez do setCycles.
+
+# Contexto no formulário
+
+geralmente mantemos no contexto coisas que não vão mudar se trocarmos a biblioteca, no caso React. Esse ponto surgiu
+a partir da dúvida se passávamos ou não 'register' via contexto. Qual a solução? Passar via props? Também não.
+A melhor solução é usar o hook useFormContext(): que é usar um <FormProvider {...newCycleForm}> e passar via spread.
+{...newCycleForm} repassa para o FormProvider cada elemento em forma de propriedade.
+useFormContext() só funciona se tiver um <FormProvider {...newCycleForm}> em volta do componente.
+
+# Contexto entre rotas
+
+contexto precisa ser desacoplado de libs externas, por ex, não usar a lib Zod de validação.
+
+# Reset do formulário
