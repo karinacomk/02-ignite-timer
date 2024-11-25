@@ -302,6 +302,10 @@ useFormContext() só funciona se tiver um <FormProvider {...newCycleForm}> em vo
 
 # Contexto entre rotas
 
-contexto precisa ser desacoplado de libs externas, por ex, não usar a lib Zod de validação.
+O contexto precisa ser desacoplado de libs externas, por ex, não usar a lib Zod de validação.
 
 # Reset do formulário
+
+Função que começa com o termo 'handle' são aquelas chamadas a partir de eventos como onclick().
+
+# Listagem do histórico
