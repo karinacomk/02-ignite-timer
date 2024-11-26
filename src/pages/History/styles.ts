@@ -71,19 +71,33 @@ interface StatusProps {
 }
 
 // export const Status = styled.span<StatusProps>`
-export const Status = styled.span.withConfig({
-  shouldForwardProp: (prop) => prop === 'statuscolor',
-})<StatusProps>`
-  // para receber uma propriedade usa generics do typescript
+// para receber uma propriedade usa generics do typescript
+// before é a bolinha
+export const Status = styled.span<StatusProps>`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
   &::before {
-    // before é a bolinha
     content: '';
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 9999px;
-    background: ${(props) => props.theme[STATUS_COLORS[props.statuscolor]]};
+    background: ${(props) => props.theme[STATUS_COLORS[props.statusColor]]};
   }
 `
+
+// export const Status = styled.span.withConfig({
+//   shouldForwardProp: (prop) => prop === 'statuscolor',
+// })<StatusProps>`
+//   display: flex;
+//   align-items: center;
+//   gap: 0.5rem;
+//   &::before {
+//     content: '';
+//     width: 0.5rem;
+//     height: 0.5rem;
+//     border-radius: 9999px;
+//     background: ${(props) => props.theme[STATUS_COLORS[props.statuscolor]]};
+//   }
+// `
