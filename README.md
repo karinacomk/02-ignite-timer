@@ -311,3 +311,7 @@ Função que começa com o termo 'handle' são aquelas chamadas a partir de even
 # Listagem do histórico
 
 # Formatação de data
+
+## REDUCERS
+
+# Criando reducer de ciclos
