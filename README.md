@@ -315,3 +315,9 @@ Função que começa com o termo 'handle' são aquelas chamadas a partir de even
 ## REDUCERS
 
 # Criando reducer de ciclos
+
+Serve para armazenar uma info e alterar no futuro. São infos mais complexas.
+É como se tivesse um local fixo para todas as alterações de um estado.
+usa o dispatch()
+
+# Salvando um objeto no Reducer
