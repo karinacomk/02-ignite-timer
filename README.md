@@ -314,6 +314,8 @@ Função que começa com o termo 'handle' são aquelas chamadas a partir de even
 
 ## REDUCERS
 
+é pattern
+
 # Criando reducer de ciclos
 
 Serve para armazenar uma info e alterar no futuro. São infos mais complexas.
@@ -321,3 +323,11 @@ Serve para armazenar uma info e alterar no futuro. São infos mais complexas.
 usa o dispatch()
 
 # Salvando um objeto no Reducer
+
+Site para ajudar nos erros do Typescript:
+https://ts-error-translator.vercel.app/
+
+Não precisa ter vários estados para controlar o estado de várias informações, podemos usar Reducer se as infos pertencem
+ao mesmo assunto.
+
+# Marcando ciclo como finalizado
