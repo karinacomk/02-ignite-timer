@@ -331,3 +331,7 @@ Não precisa ter vários estados para controlar o estado de várias informaçõe
 ao mesmo assunto.
 
 # Marcando ciclo como finalizado
+
+muitos ifs => trocar por switch
+
+# Separando Action Types
