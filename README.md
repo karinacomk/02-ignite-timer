@@ -335,3 +335,5 @@ ao mesmo assunto.
 muitos ifs => trocar por switch
 
 # Separando Action Types
+
+Usando ENUM e criando diretório próprio para reducers.
