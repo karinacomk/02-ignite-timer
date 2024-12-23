@@ -355,3 +355,11 @@ para ver locastorage: em DevTools, menu Application > Local Storage > filtra pel
 
 Tem bibliotecas que fazem o parse do JSON sem modifiicar o tipo de dados, por exemplo, mantendo o tipo Date, pois por
 default o JSON.parse() transforma tudo em string.
+
+TODO: fazer os 2 desafios
+
+## HTTP e performance
+
+# Consumo de API e performance no ReactJS
+
+# Introdução
