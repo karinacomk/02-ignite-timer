@@ -321,6 +321,7 @@ Função que começa com o termo 'handle' são aquelas chamadas a partir de even
 Serve para armazenar uma info e alterar no futuro. São infos mais complexas.
 É como se tivesse um local fixo para todas as alterações de um estado.
 usa o dispatch()
+o padrão utilizado noos dispatchs dos reducers é { info, payload }
 
 # Salvando um objeto no Reducer
 
