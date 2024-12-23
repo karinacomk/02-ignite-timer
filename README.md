@@ -337,3 +337,20 @@ muitos ifs => trocar por switch
 # Separando Action Types
 
 Usando ENUM e criando diretório próprio para reducers.
+
+# immer js
+
+https://github.com/immerjs/immer
+é uma biblioteca para trabalhar com dados imutáveis como se não fossem imutáveis.
+
+# Salvando estado no storage
+
+para quando der F5 continuar lá os dados
+só suporta salvar textos
+dica 1: quando for salvar informações coloque um prefixo: '@ignite-timer:cycles-state'
+dica 2: em prod colocar a versão da informação: '@ignite-timer:cycles-state-1.0.0' para não dar erro se trocar o formato de
+dados
+para ver locastorage: em DevTools, menu Application > Local Storage > filtra pelo nome @ignite-timer
+
+Tem bibliotecas que fazem o parse do JSON sem modifiicar o tipo de dados, por exemplo, mantendo o tipo Date, pois por
+default o JSON.parse() transforma tudo em string.
