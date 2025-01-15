@@ -364,9 +364,3 @@ https://github.com/rocketseat-education/ignite-challenge-solution-reactjs-todo
 Dica: pesquisar colocando sempre 'MDN' na frente: reducer mdn
 
 Desafio 2
-
-## HTTP e performance
-
-# Consumo de API e performance no ReactJS
-
-# Introdução
